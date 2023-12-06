@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSchool", "MusicSchool.csproj", "{5D209817-8D2B-46E7-8C59-26C2E99C672C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D209817-8D2B-46E7-8C59-26C2E99C672C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D209817-8D2B-46E7-8C59-26C2E99C672C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D209817-8D2B-46E7-8C59-26C2E99C672C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D209817-8D2B-46E7-8C59-26C2E99C672C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CBCC9B5-846E-4CFA-A9C0-28E979C7A843}
+	EndGlobalSection
+EndGlobal
