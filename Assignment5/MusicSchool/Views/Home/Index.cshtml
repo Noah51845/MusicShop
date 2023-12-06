@@ -1,8 +1,30 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Music Shop";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcomen to the Music Shop</h1>
+    <p>Select Genre</p>
+
+    <form method="get">
+        <label for="genreDropdown">Select Genre:</label>
+        <select id="genreDropdown" name="selectedGenre">
+            <option value="">All Genres</option>
+            <option value="hip-hop">Hip-Hop</option>
+            <option value="rap">Rap</option>
+            <option value="country">Country</option>
+            <option value="r&b">R&B</option>
+            <option value="pop">Pop</option>
+            <option value="jazz">Jazz</option>
+        </select>
+        <button type="submit">Filter</button>
+    </form>
+
+    <!-- Display songs based on the selected genre -->
+    <ul>
+        @foreach (var songs in ViewData["FilteredSongs"] as List<Music>)
+        {
+            <li>@songs.SongTitle - @songs.Perfomer</li>
+        }
+    </ul>
 </div>
