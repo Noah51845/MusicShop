@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Assignment5\\MusicSchool\\MusicSchool.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\MusicSchool.csproj",
       "projectName": "MusicSchool",
-      "projectPath": "C:\\Users\\User\\Desktop\\Assignment5\\MusicSchool\\MusicSchool.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\MusicSchool.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Assignment5\\MusicSchool\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
