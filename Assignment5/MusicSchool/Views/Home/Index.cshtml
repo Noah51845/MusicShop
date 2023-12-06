@@ -3,8 +3,8 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcomen to the Music Shop</h1>
-    <p>Select Genre</p>
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 
     <form method="get">
         <label for="genreDropdown">Select Genre:</label>
@@ -21,10 +21,19 @@
     </form>
 
     <!-- Display songs based on the selected genre -->
-    <ul>
-        @foreach (var songs in ViewData["FilteredSongs"] as List<Music>)
+    <div class="row">
+        @foreach (var song in ViewData["FilteredSongs"] as List<Music>)
         {
-            <li>@songs.SongTitle - @songs.Perfomer</li>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@song.SongTitle</h5>
+                        <p class="card-text">@song.Perfomer</p>
+                        <p class="card-text">@song.Genre</p>
+                        <a href="@Url.Action("AddToCart", new { id = song.MusicId })" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
         }
-    </ul>
+    </div>
 </div>

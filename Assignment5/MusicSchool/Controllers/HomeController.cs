@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Music_Shop.Controllers;
 using MusicSchool.Data;
 using MusicSchool.Models;
 using System.Diagnostics;
@@ -30,6 +31,27 @@ namespace MusicSchool.Controllers
             ViewData["FilteredSongs"] = songs;
 
             return View();
+        }
+
+        public IActionResult AddToCart(int id)
+        {
+            // Fetch the selected song from the database
+            var song = _context.Music.Find(id);
+
+            // Add the selected song to the shopping cart
+            Cart.AddToCart(song);
+
+            // Redirect back to the Index page
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult ShoppingCart()
+        {
+            // Get the items in the shopping cart
+            var cartItems = Cart.GetCartItems();
+
+            // Pass the cart items to the ShoppingCart view in the Cart folder
+            return View("Cart/Index", cartItems);
         }
 
         public IActionResult Privacy()

@@ -1,47 +1,27 @@
-﻿@model IEnumerable<MusicSchool.Models.Music>
+﻿@model IEnumerable<Music_Shop.Controllers.CartItem>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Cart";
 }
 
-<h1>Index</h1>
+<h1>Cart</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.SongTitle)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Genre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Perfomer)
-            </th>
-            <th></th>
+            <th>Song Title</th>
+            <th>Genre</th>
+            <th>Performer</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.SongTitle)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Genre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Perfomer)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.MusicId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.MusicId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.MusicId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.SongTitle</td>
+                
+                <td>@item.Perfomer</td>
+            </tr>
+        }
     </tbody>
 </table>
