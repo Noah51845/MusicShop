@@ -8,8 +8,7 @@ namespace Music_Shop.Controllers
 
         public static void AddToCart(Music song)
         {
-            // Implement your logic to add the song to the cart
-            // This could involve creating a CartItem class and adding it to the _cartItems list
+           //add price movement here to move from the two pages
             _cartItems.Add(new CartItem { SongTitle = song.SongTitle, Perfomer = song.Perfomer });
         }
 

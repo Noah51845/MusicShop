@@ -9,7 +9,7 @@ using Music_Shop.Controllers;
 using MusicSchool.Data;
 using MusicSchool.Models;
 
-namespace MusicSchool.Controllers
+namespace MusicSchool.Controllers // dont worry bout why this is music school 
 {
     public class CartController : Controller
     {
@@ -48,7 +48,7 @@ namespace MusicSchool.Controllers
             return View(music);
         }
 
-        // Other actions...
+        
 
         private bool MusicExists(int id)
         {
