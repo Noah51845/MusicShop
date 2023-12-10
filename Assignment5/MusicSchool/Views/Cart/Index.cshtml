@@ -12,7 +12,6 @@
             <th>Song Title</th>
             <th>Performer</th>
             <th>Price</th>
-            <!--add one for price when doing this-->
         </tr>
     </thead>
     <tbody>
@@ -24,9 +23,20 @@
                 <td>@item.Perfomer</td>
 
                 <td>@item.Price.ToString("C")</td>
-
-                <!--add one for price when doing this-->
             </tr>
         }
     </tbody>
 </table>
+<a>
+    Total Price in Cart:
+</a>
+@{
+        double total = 0;
+        foreach (var item in Model)
+        {
+            total = total + item.Price;
+        }
+    <a>@total.ToString("C")</a>
+    }
+    <br />
+<a href="@Url.Action("Index", "Purchase")" class="btn btn-primary">Purchase</a>

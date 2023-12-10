@@ -29,6 +29,7 @@ namespace MusicSchool.Controllers // dont worry bout why this is music school
             // Pass the cart items to the Cart/Index view
             return View(cartItems);
         }
+        
 
         // GET: Cart/Details/5
         public async Task<IActionResult> Details(int? id)

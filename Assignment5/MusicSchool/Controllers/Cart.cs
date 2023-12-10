@@ -17,6 +17,10 @@ namespace Music_Shop.Controllers
             // Return the items in the cart
             return _cartItems;
         }
+        public static void ClearCart() 
+        {
+            _cartItems.Clear();
+        }
     }
 
     public class CartItem
