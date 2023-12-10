@@ -18,6 +18,31 @@
             <option value="jazz">Jazz</option>
             <option value ="rock">Rock</option>
         </select>
+
+        <label for="artistDropdown">Select Artist:</label>
+        <select id="artistDropdown" name="selectedArtist">
+            <option value="na">None Selected</option>
+            @{
+                List<string> previous = new List<string>(ViewData.Count);
+                foreach (var song in ViewData["FilteredSongs"] as List<Music>)
+                {
+                    bool item = false;
+                    foreach (string element in previous)
+                    {
+                        if (element.Equals(song.Perfomer))
+                        {
+                            item = true;
+                        }
+                    }
+                    if (!item)
+                    {
+                        <option value=@song.Perfomer>@song.Perfomer</option>
+                        previous.Add(song.Perfomer);
+                    }
+                }
+            }
+        </select>
+
         <button type="submit">Filter</button>
     </form>
 
@@ -31,6 +56,7 @@
                         <h5 class="card-title">@song.SongTitle</h5>
                         <p class="card-text">@song.Perfomer</p>
                         <p class="card-text">@song.Genre</p>
+                        <p class="card-text">@song.Price.ToString("C")</p>
                         <a href="@Url.Action("AddToCart", new { id = song.MusicId })" class="btn btn-primary">Add to Cart</a>
                     </div>
                 </div>

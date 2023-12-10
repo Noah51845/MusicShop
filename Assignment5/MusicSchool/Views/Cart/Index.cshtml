@@ -11,6 +11,7 @@
         <tr>
             <th>Song Title</th>
             <th>Performer</th>
+            <th>Price</th>
             <!--add one for price when doing this-->
         </tr>
     </thead>
@@ -21,6 +22,9 @@
                 <td>@item.SongTitle</td>
                 
                 <td>@item.Perfomer</td>
+
+                <td>@item.Price.ToString("C")</td>
+
                 <!--add one for price when doing this-->
             </tr>
         }

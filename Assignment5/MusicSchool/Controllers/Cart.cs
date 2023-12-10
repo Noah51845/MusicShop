@@ -9,7 +9,7 @@ namespace Music_Shop.Controllers
         public static void AddToCart(Music song)
         {
            //add price movement here to move from the two pages
-            _cartItems.Add(new CartItem { SongTitle = song.SongTitle, Perfomer = song.Perfomer });
+            _cartItems.Add(new CartItem { SongTitle = song.SongTitle, Perfomer = song.Perfomer, Price = song.Price });
         }
 
         public static List<CartItem> GetCartItems()
@@ -23,6 +23,7 @@ namespace Music_Shop.Controllers
     {
         public string SongTitle { get; set; }
         public string Perfomer { get; set; }
+        public double Price { get; set; }
     }
 
 }

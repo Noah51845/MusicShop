@@ -18,15 +18,21 @@ namespace MusicSchool.Controllers
             _context = context;
         }
 
-        public IActionResult Index(string selectedGenre)
+        public IActionResult Index(string selectedGenre, string selectedArtist)
         {
             // Get all genres for dropdown
             ViewData["Genres"] = new List<string> { "hip-hop", "rap", "country", "r&b", "pop", "jazz" };
-
+            
             // Filter songs based on the selected genre
             var songs = string.IsNullOrEmpty(selectedGenre)
                 ? _context.Music.ToList()  // Show all songs if no genre is selected
                 : _context.Music.Where(s => s.Genre == selectedGenre).ToList();
+
+            if (selectedArtist != "na")
+            {
+                songs = _context.Music.Where(s => s.Perfomer.Equals(selectedArtist)).ToList();
+            } 
+            
 
             ViewData["FilteredSongs"] = songs;
 

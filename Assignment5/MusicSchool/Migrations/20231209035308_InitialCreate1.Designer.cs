@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MusicSchool.Data;
 
@@ -10,9 +11,11 @@ using MusicSchool.Data;
 namespace MusicSchool.Migrations
 {
     [DbContext(typeof(MusicShopContext))]
-    partial class MusicSchoolContextModelSnapshot : ModelSnapshot
+    [Migration("20231209035308_InitialCreate1")]
+    partial class InitialCreate1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

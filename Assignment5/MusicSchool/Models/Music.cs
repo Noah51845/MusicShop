@@ -7,7 +7,7 @@ namespace MusicSchool.Models
         public string SongTitle { get; set; }
         public string Genre { get; set; }
         public string Perfomer { get; set; }
-
+        public double Price { get; set; }
 
     }
 }

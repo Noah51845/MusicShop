@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\Music Shop.csproj": {}
+    "C:\\Users\\matht\\OneDrive\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\Music Shop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\Music Shop.csproj": {
+    "C:\\Users\\matht\\OneDrive\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\Music Shop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\Music Shop.csproj",
+        "projectUniqueName": "C:\\Users\\matht\\OneDrive\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\Music Shop.csproj",
         "projectName": "Music Shop",
-        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\Music Shop.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\obj\\",
+        "projectPath": "C:\\Users\\matht\\OneDrive\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\Music Shop.csproj",
+        "packagesPath": "C:\\Users\\matht\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matht\\OneDrive\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\matht\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
