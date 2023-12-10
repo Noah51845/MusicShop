@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rOACUfEoHqQfPDGKgrYi0RG7rulDZy0TW4KKPH+28SA=",
+  "Hash": "DxCEmQQMXivvV595f90Gk7gl28TrzXh9jM/PDXlchFY=",
   "Source": "Music Shop",
   "BasePath": "_content/Music Shop",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\matht\\OneDrive\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\wwwroot\\Images\\ozzyosbourne.jpg",
+      "SourceId": "Music Shop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\matht\\OneDrive\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\wwwroot\\",
+      "BasePath": "_content/Music Shop",
+      "RelativePath": "Images/ozzyosbourne.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\ozzyosbourne.jpg"
     },
     {
       "Identity": "C:\\Users\\matht\\OneDrive\\Documents\\GitHub\\MusicShop\\Assignment5\\MusicSchool\\wwwroot\\js\\site.js",
