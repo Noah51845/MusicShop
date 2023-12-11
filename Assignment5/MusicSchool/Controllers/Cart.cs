@@ -19,6 +19,7 @@ namespace Music_Shop.Controllers
         }
         public static void ClearCart() 
         {
+            // Remove all items from the cart
             _cartItems.Clear();
         }
     }
